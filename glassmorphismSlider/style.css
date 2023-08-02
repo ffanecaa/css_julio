@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #4158d0;
+	 background-image: linear-gradient(45deg,rgb(152, 152, 238) 0%,rgb(224, 119, 137)45%,rgb(232, 232, 94)100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-container {
+	width: 400px;
+	height: 500px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, .3);
+	background-color: #000;
+}
+.swiper-slide img {
+	display: block;
+	width: 100%;
+    object-fit: cover;
+   
+}
+.glass {
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	bottom: -50%;
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	transition: bottom .5s ease-in-out;
+}
+.swiper-slide:hover .glass {
+	bottom: 30px;
+}
+.glass span {
+	display: block;
+	margin: -15px -15px 0;
+	padding: 15px;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+.glass a {
+	color: #fff;
+	font-weight: 800;
+}
+.glass p {
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.youtube-link {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
