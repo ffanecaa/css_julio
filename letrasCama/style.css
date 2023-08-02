@@ -1,0 +1,60 @@
+@font-face {
+    src: url('[Your url to woff2 file here.]');
+    font-family:'';
+    font-style: normal;
+  }
+  @font-face {
+    src: url('[Your url to woff2 file here.]');
+    font-family:'Louvette Beta';
+    font-style: normal;
+  }
+  @font-face {
+    src: url('[Your url to woff2 file here.]');
+    font-family:'Fit';
+    font-style: normal;
+  }
+   
+  /* text: Font Playground */
+  #text1 {
+    font-family: 'Roslindale Variable Italic Beta';
+    font-size: 82px; 
+    position: absolute; 
+    left: 137px; 
+    top: 456px; 
+    font-variation-settings:
+      'ital' 1,
+      'slnt' 0.00; 
+  }
+  /* text: is */
+  #text2 {
+    font-family: 'Louvette Beta';
+    font-size: 95px; 
+    position: absolute; 
+    left: 300px; 
+    top: 378px; 
+    font-variation-settings:
+      'wght' 300.00,
+      'yopq' 100.00,
+      'ytde' 100; 
+  }
+  /* text: very */
+  #text3 {
+    font-family: 'Fit';
+    font-size: 161px; 
+    position: absolute; 
+    left: 34px; 
+    top: 251px; 
+    font-variation-settings:
+      'wdth' 278.37; 
+  }
+  /* text: Awesome */
+  #text4 {
+    font-family: 'Roslindale Variable Italic Beta';
+    font-size: 100px; 
+    position: absolute; 
+    left: 450px; 
+    top: 356px; 
+    font-variation-settings:
+      'ital' 1,
+      'slnt' 0.00; 
+  }
