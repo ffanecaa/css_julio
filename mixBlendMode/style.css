@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+:root {
+  --primary: #e3e028;
+  --secondary: #ff0c87;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(74, 57, 57);
+}
+
+.neon-effect {
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+.neon-title {
+  position: relative;
+}
+ .neon-title::after {
+  content: attr(data-text);
+  color: rgb(0, 255, 21);
+  filter: blur(0.01em);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.neon-title::after {
+  mix-blend-mode:difference;
+}
+.neon-gradient, .neon-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.neon-gradient {
+  background: linear-gradient(78deg, var(--primary), var(--secondary));
+  mix-blend-mode: multiply;
+}
+.neon-light {
+  -webkit-animation: light 5s infinite linear;
+          animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0/25% 25%, radial-gradient(circle, white, black 25%) 50% 50%/12.5% 12.5%;
+  left: -100%;
+  mix-blend-mode: color-dodge;
+}
+
+@-webkit-keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}

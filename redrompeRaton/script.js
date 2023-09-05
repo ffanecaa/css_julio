@@ -1,7 +1,9 @@
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 //altura ancho y objecto a dibujar
-let w, h, particles;
+let w
+let h
+let particles;
 let particleDistance = 20;
 let mouse = {
 	x: undefined,
@@ -14,9 +16,10 @@ function init() {
 	animationLoop();
 }
 
+
 function resizeReset() {
-	w = canvas.width = window.innerWidth;
-	h = canvas.height = window.innerHeight;
+	w = canvas.width = innerWidth;
+	h = canvas.height = innerHeight;
 
 	particles = [];
 	for (let y = (((h - particleDistance) % particleDistance) + particleDistance) / 2; y < h; y += particleDistance) {
